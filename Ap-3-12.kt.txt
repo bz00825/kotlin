@@ -1,0 +1,53 @@
+Banzragch Ganchimeg 
+
+2016139	March 12th 
+
+fun main(args: Array<String>) {
+    
+    var i = 1
+    
+    var j = 1
+    
+    val tree = 5
+    
+    var int = 2
+    
+    // Loop 1 - 50
+    do {
+        println(j)
+        j += 1
+        if (j == 51) {
+            break
+        }
+        } while (j > 0) 
+      
+    // Multiplication table      
+   
+    do {
+        println("2 * $i = " + (2 * i))
+        i++
+    } while (i <= 5)
+    
+    // for loop 1 - 50
+    for (k in 1..50) {
+        println(k)
+    }
+    // for Multiplication
+    
+    for(multi in 1..5){
+    val result = int * multi
+	println("$int * $multi = $result")
+    }
+    
+    // Christmas tree
+
+    	for (num in tree downTo 1) {
+        if(num == 5){
+        	continue
+        }
+        for (star in 1 .. num) {
+            print("* ")
+        }
+        println(" ")
+    }
+}
